@@ -1,0 +1,27 @@
+class calc:
+    def cube(self):
+        x = int(input("Enter a number: "))
+        return x**3
+
+    def triangle(self):
+        h = float(input("Enter Height: "))
+        w = float(input("Enter Base: "))
+        return (h*w)*0.5
+    
+    def rectangle(self):
+        h = float(input("Enter Height: "))
+        w = float(input("Enter Width: "))
+        return h*w
+    
+    def line(self):
+        x = float(input("Enter x coordinate: "))
+        m = float(input("Enter slope: "))
+        b = float(input("Enter y intercept: "))
+        return (x*m)+b
+    
+calculator = calc()
+
+print(f"The cube root is {calculator.cube()}")
+print(f"The area of the triangle is {calculator.triangle()}")
+print(f"The area of the rectangle is {calculator.rectangle()}")
+print(f"The y-coordinate associated with the line is {calculator.line()}")
